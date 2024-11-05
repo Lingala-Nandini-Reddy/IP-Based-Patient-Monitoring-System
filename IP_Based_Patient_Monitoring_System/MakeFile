@@ -1,0 +1,23 @@
+# Makefile to compile the project
+
+CC = gcc
+CFLAGS = -Wall
+
+# Target for the main executable
+all: main
+
+main: main.o patient_data.o real_time_monitoring.o
+    $(CC) $(CFLAGS) -o main main.o patient_data.o real_time_monitoring.o
+
+main.o: main.c patient_data.h real_time_monitoring.h
+    $(CC) $(CFLAGS) -c main.c
+
+patient_data.o: patient_data.c patient_data.h
+    $(CC) $(CFLAGS) -c patient_data.c
+
+real_time_monitoring.o: real_time_monitoring.c real_time_monitoring.h patient_data.h
+    $(CC) $(CFLAGS) -c real_time_monitoring.c
+
+# Clean up object files and executable
+clean:
+    rm -f *.o main log_file.txt
