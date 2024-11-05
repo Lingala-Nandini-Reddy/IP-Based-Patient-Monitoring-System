@@ -12,9 +12,9 @@ This project is an IP-Based Patient Monitoring System designed to track and moni
 **Alerts and Notifications: Sends alerts to healthcare providers if any metric crosses a threshold, ensuring timely medical intervention.**
 
 ### **Use Cases**
-**Remote patient monitoring in home healthcare settings**
-**Post-operative monitoring for patients in recovery**
-**Continuous monitoring in hospital wards**
+**Remote patient monitoring in home healthcare settings.**
+**Post-operative monitoring for patients in recovery.**
+**Continuous monitoring in hospital wards.**
 ### **Future Enhancements**
 **AI and Machine Learning Integration: Analyze historical data to predict potential health risks.**
 **Mobile Application: Provide access to real-time data on mobile devices for convenience.**
